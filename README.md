@@ -1,8 +1,31 @@
 # Hybrid Database Design for ChatApplication with PostgreSQL-MongoDB #
 ### This project demonstrates my grasp of key concepts and practical skills in subject Databas-teknik. ### 
-### The goal is to demonstrate proper relational modeling principles combined with practical postgres usage. ###
+#### The goal is to demonstrate proper relational modeling principles combined with practical postgres usage and MongoGB. ####
 ChatGPT has been helpful for generating seed-data and assisting me with this README file which is lets face it much better especially with icons and layout.
 
+
+### Quick Setup Guide before README: ###  
+**Option 1:**  
+Datagrip -> create a database, connect to it.  
+Open Query.  
+&nbsp;&nbsp;-Open schema.sql &nbsp;&nbsp;with text editor, copy paste and run the query.  
+&nbsp;&nbsp;-Open seed.sql &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with text editor, copy paste and run the query.  
+&nbsp;&nbsp;-Open queries.sql &nbsp;&nbsp;with text editor, copy paste  and run the query.  
+<br>
+
+**Option 2:**  
+Create a database connect to it using Datagrip.  
+&nbsp;Right click on the newly created database.  
+&nbsp;&nbsp;Click on import/export -> Dump to DDL Data source -> Create ddl data source...  
+&nbsp;&nbsp;&nbsp;Check on top left part of now opened window make sure you have  
+	-nameOfYourDatabase@localhost (DDL) under Data sources and its marked or  highlighted Blue.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Click on Add Directories or DDL files  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Choose schema.sql from downloaded files.   
+in File View/ File explorer, if not opened by default check top window to resolve.  
+&nbsp;in files window open schema.sql  
+&nbsp;&nbsp;now run the query.  
+  
+Repeat same step for seeds.sql and queries.sql  
 
 
 ### **🌟 Overview** ###

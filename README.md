@@ -6,7 +6,7 @@ ChatGPT has been helpful for generating seed-data and assisting me with this REA
 
 **Quick Setup Guide before README:**
 <br>
-Download the files  
+Download the files.  
 **Option 1:**
 <br>
 Datagrip -> create a database, connect to it.  

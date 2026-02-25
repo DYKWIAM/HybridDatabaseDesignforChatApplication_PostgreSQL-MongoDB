@@ -4,8 +4,10 @@
 ChatGPT has been helpful for generating seed-data and assisting me with this README file which is lets face it much better especially with icons and layout.
 
 
-### Quick Setup Guide before README: ###  
-**Option 1:**  
+**Quick Setup Guide before README:**
+<br>
+**Option 1:**
+<br>
 Datagrip -> create a database, connect to it.  
 Open Query.  
 &nbsp;&nbsp;-Open schema.sql &nbsp;&nbsp;with text editor, copy paste and run the query.  
@@ -24,11 +26,10 @@ Create a database connect to it using Datagrip.
 in File View/ File explorer, if not opened by default check top window to resolve.  
 &nbsp;in files window open schema.sql  
 &nbsp;&nbsp;now run the query.  
-  
 Repeat same step for seeds.sql and queries.sql  
 
 
-### **🌟 Overview** ###
+**🌟 Overview** <br>
 This project implements a hybrid database architecture for a chat system using:
 PostgreSQL — structured relational data
 MongoDB — flexible, high-volume event data
@@ -42,7 +43,8 @@ MongoDB — flexible, high-volume event data
 📨 Messages  
 📜 Join/leave logs  
  
-### **🏗 System Architecture** ###  
+**🏗 System Architecture**
+<br> 
 The system separates data storage responsibilities based on data structure and behavior.
 
 📦 Data Type	🗄 Database	🎯 Why  
@@ -53,71 +55,62 @@ The system separates data storage responsibilities based on data structure and b
     Messages	MongoDB	    Write-heavy, flexible schema, storage  
     Join Logs	MongoDB	    Event-based storage  
 
-✅ Structured data → Relational database
+✅ Structured data → Relational database  
 ✅ Dynamic, log-based data → Document database
 
-### ** Relational Layer – PostgreSQL** ###  
-
+**Relational Layer – PostgreSQL**
+<br>
 Fully normalized to ### **Third Normal Form (3NF).** ###  
 
 🔑 Features Implemented
+✔ Primary Keys  
+✔ Foreign Keys  
+✔ CHECK Constraints  
+✔ UNIQUE Constraints  
+✔ ON DELETE CASCADE  
+✔ Composite Primary Keys  
+✔ View Definition  
+✔ Aggregate Queries  
 
-✔ Primary Keys
+**🧩 Core Tables**  
+users  
+channels  
+roles  
+user_channel_memberships  
+user_roles  
 
-✔ Foreign Keys
+**🔄 Relationship Design**
+1–N → Users → Memberships  
+1–N → Channels → Memberships  
+N–N → Users ↔ Channels  
+N–N → Users ↔ Roles  
 
-✔ CHECK Constraints
+**👁 View**
+channel_member_view  
+Provides a joined representation of channels and their members using SQL JOINs.  
 
-✔ UNIQUE Constraints
+**🍃 Document Layer – MongoDB**   
+MongoDB stores:  
+--Messages  
+--Channel Join/Leave Logs  
+--Why MongoDB?  
+--Flexible Schema  
+Messages may evolve with:  
+Reactions  
+Attachments  
+Edits  
+Metadata  
+<br>
+No schema migrations required.  
+<br>
+⚡ High Write Throughput  
+Chat systems are:  
+Insert-heavy  
+Time-based  
+Append-driven  
+MongoDB handles this efficiently.  
 
-✔ ON DELETE CASCADE
-
-✔ Composite Primary Keys
-
-✔ View Definition
-
-✔ Aggregate Queries
-
- ### **🧩 Core Tables** ###  
-users
-channels
-roles
-user_channel_memberships
-user_roles
-
- ### **🔄 Relationship Design** ### 
-1–N → Users → Memberships
-1–N → Channels → Memberships
-N–N → Users ↔ Channels
-N–N → Users ↔ Roles
-
- ### **👁 View** ### 
-channel_member_view
-Provides a joined representation of channels and their members using SQL JOINs.
-
-
- ### **🍃 Document Layer – MongoDB** ### 
-MongoDB stores:
---Messages
---Channel Join/Leave Logs
---Why MongoDB?
---Flexible Schema
-Messages may evolve with:
-Reactions
-Attachments
-Edits
-Metadata
-
-No schema migrations required.
-
-⚡ High Write Throughput
-Chat systems are:
-Insert-heavy
-Time-based
-Append-driven
-MongoDB handles this efficiently.
-
-**📜 Event-Based Modeling**
+**📜 Event-Based Modeling**  
 Join logs are naturally represented as document-based events.  
 Example:  
 {  
@@ -142,5 +135,5 @@ Example:
 
 
 
-**🔥🔥🔥 H I R E D 🔥🔥🔥**
+**🔥 H I R E D 🔥**
 

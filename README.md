@@ -95,22 +95,23 @@ Append-driven
 MongoDB handles this efficiently.
 
 **📜 Event-Based Modeling**
-Join logs are naturally represented as document-based events.
-Example:
-{
-  "user_id": 2,
-  "channel_id": 1,
-  "event": "join",
-  "timestamp": ISODate("2026-02-25T09:00:00Z")
-}
-🗺 ER Diagram (Conceptual)
-[ USERS ] ----< [ USER_CHANNEL_MEMBERSHIPS ] >---- [ CHANNELS ]
-     |
-     v
-[ USER_ROLES ] >---- [ ROLES ]
+Join logs are naturally represented as document-based events.  
+Example:  
+{  
+&nbsp;&nbsp;  "user_id": 2,  
+&nbsp;&nbsp;  "channel_id": 1,  
+&nbsp;&nbsp;  "event": "join",  
+&nbsp;&nbsp;  "timestamp": ISODate("2026-02-25T09:00:00Z")  
+} 
 
-✔ Junction tables implement N–N relationships
-✔ Referential integrity enforced via foreign keys
+### 🗺 ER Diagram (Conceptual) ###  
+[ USERS ] ----< [ USER_CHANNEL_MEMBERSHIPS ] >---- [ CHANNELS ]  
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    |  
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   v  
+&nbsp;&nbsp;&nbsp;[ USER_ROLES ] >---- [ ROLES ]  
+  
+✔ Junction tables implement N–N relationships  
+✔ Referential integrity enforced via foreign keys  
 
  ### 📂 Project Structure ###  
 ![Alt text](/ER%20DIAGRAM.png)

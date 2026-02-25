@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "699e609289aed7ea3bf1a6ba"
+  },
+  "user_id": 1,
+  "username": "Masoud",
+  "channel_id": 1,
+  "event": "join",
+  "timestamp": "2026-18-24T04:34:21.630923Z"
+},
+{
+  "_id": {
+    "$oid": "699e609289aed7ea3bf1a6bb"
+  },
+  "user_id": 2,
+  "username": "alice",
+  "channel_id": 1,
+  "event": "join",
+  "timestamp": "2026-17-24T04:34:11.630923Z"
+},
+{
+  "_id": {
+    "$oid": "699e609289aed7ea3bf1a6bc"
+  },
+  "user_id": 3,
+  "username": "bob",
+  "channel_id": 2,
+  "event": "join",
+  "timestamp": "2026-16-24T04:34:22.630923Z"
+},
+{
+  "_id": {
+    "$oid": "699e609289aed7ea3bf1a6bd"
+  },
+  "user_id": 1,
+  "username": "Masoud",
+  "channel_id": 1,
+  "event": "leave",
+  "timestamp": "2021-04-24T04:34:23.630923Z"
+}]

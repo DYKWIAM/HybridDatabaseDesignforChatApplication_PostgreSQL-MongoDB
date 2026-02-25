@@ -1,5 +1,6 @@
 # Hybrid Database Design for ChatApplication with PostgreSQL-MongoDB #
 ### This project demonstrates my grasp of key concepts and practical skills in subject Databas-teknik. ### 
+### The goal is to demonstrate proper relational modeling principles combined with practical postgres usage. ###
 ChatGPT has been helpful for generating seed-data and assisting me with this README file which is lets face it much better especially with icons and layout.
 
 
@@ -17,8 +18,7 @@ MongoDB — flexible, high-volume event data
 🏷 Role assignments  
 📨 Messages  
 📜 Join/leave logs  
-
-The goal is to demonstrate proper relational modeling principles combined with practical postgres usage.  
+ 
 ### **🏗 System Architecture** ###  
 The system separates data storage responsibilities based on data structure and behavior.
 

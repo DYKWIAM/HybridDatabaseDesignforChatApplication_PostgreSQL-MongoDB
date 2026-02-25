@@ -1,0 +1,43 @@
+NOTICE is a message level. It:
+Prints a message to the PostgreSQL console/log
+Does not stop execution
+Is mainly used for debugging
+Other levels include EXCEPTION, WARNING, INFO, etc.
+
+if we dont use json we have to array_aggretage manually formating and loop through.
+mongoDb gui + server
+
+  { $match: { user_id: 2 } },
+  { $count: "user2MessageCount" }
+
+in shell:
+messages> db.msg.countDocuments({user_id: 2})
+
+
+undrar för läreren, om unique, foreign key
+user_channel_memberships 
+user_roles
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

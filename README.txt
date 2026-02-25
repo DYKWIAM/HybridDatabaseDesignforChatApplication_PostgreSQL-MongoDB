@@ -1,17 +1,15 @@
-jag fick göra två readme en för läraren och en för Lia i github.
-denna är till läraren.
+Jag fick göra två README en för läraren och en för Lia i github.
+Denna är till läraren.
 
+Motivering och samspel mellan PostgreSQL och MongoDB, samt instruktioner för att skapa databasen och importera testdata.
+Postgres för relationsdatabas och MongoDb för flexibilitet, uppskalning och mycket data av någorlunda mindre prio.
+Mongodb har används här för data typer som skalar upp mycket, snabbt och kan eller kan ej vara väldigt viktig.
+MongoDb för: logs, messages. den del av databasen som på nåt sätt stackar upp i lager och man behöver titta där sällan.
+logs som user login, user created, user deleted etc. i själva projektet har jag bara user login men tanken är samma.
 
+MongoDb databasen har attributerna user_id och channel_id som postgres för att koppla data med postgres.
 
-Motivering och samspel mellan PostgreSQL och MongoDB, samt instruktioner för att sakpa databasen och importera testdata.
-postgres för realtionsdatabase och mongodb för flexibilitet, upskalning och mycket data av någorlunda mindre prio.
-Mongodb har används här för data typer som skalar up mycket, snabbt och kan eller kan ej vara väldigt viktig.
-MongoDb för: logs, messages. den del av databasen som på nåt sätt stackar up i lager och man behöver titta där sällan.
-logs som user login, user created, user deleted etc. i själva projekted har jag bara user login men tanken är samma.
-
-MongoDb databasen har attributerna user_id och channel_id som postgres för att koppla data med postgres, 
-
-Skappa databasen: copy pastar vad jag skrev på README github filen.
+copy pastar vad jag skrev på README github filen.
 
 Quick Setup Guide before README:
 Option 1:

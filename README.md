@@ -112,12 +112,12 @@ Example:
 ✔ Junction tables implement N–N relationships
 ✔ Referential integrity enforced via foreign keys
 
- ### **📂 Project Structure ** ###  
+ ### 📂 Project Structure ###  
 ![Alt text](/ER%20DIAGRAM.png)
 
 
 
- ### ** Setup guide **  ### 
+ ### Setup guide ### 
 Run the schema.sql in Datagrip or cli  
 Run the seeds.sql in Datagrip or cli  
 Run queries.sql in Datagrip, -> if you wanna run queries in cli being bash or cmd open the file with notepad or any other text editor and run
